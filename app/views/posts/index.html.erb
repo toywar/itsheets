@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+    <h2>
+      <%= image_tag (post.image_url), :class => "img-circle" %>
+      <%= link_to post.title, post, :class => "link-title-post" %>
+      |
+      <small><%= post.date.strftime("%d-%m-%Y в %H:%M") %></small>
+    </h2>
+    <%= will_paginate @posts, :class => "apple_pagination" %>
+<% end %>

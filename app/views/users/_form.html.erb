@@ -1,0 +1,33 @@
+<%= form_for(@user) do |f| %>
+  <% if @user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<%= bootstrap_form_for (@user) do |f| %>
+
+  <div class="field">
+    <p class="post-title" align="center">Юзернейм:</p>
+    <%= f.text_field :name, skip_label: true %>
+  </div>
+  <div class="field">
+    <p class="post-title" align="center">Пароль:</p>
+    <%= f.password_field :password, skip_label: true %>
+  </div>
+  <div class="field">
+    <p class="post-title" align="center">Повторите пароль:</p>
+    <%= f.password_field :password_confirmation, skip_label: true %>
+  </div>
+  <div class="actions" align="center">
+    <%= f.submit "Сохранить", class: "btn btn-success" %>
+    <%= link_to 'Назад', users_path, class: "btn btn-warning" %>
+  </div>
+<% end %>
+<% end %>

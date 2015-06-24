@@ -1,0 +1,17 @@
+<% if flash[:alert] %>
+    <p id="notice"><%= flash[:alert] %></p>
+<% end %>
+<%= bootstrap_form_tag do %>
+    <fieldset>
+      <legend style="text-align: center;">Войдите, пожалуйста</legend>
+      <div class="control-group">
+        <div class="controls">
+            <%= label_tag :name, 'Имя:', class: "control-label" %>
+            <%= text_field_tag :name, params[:name] %>
+            <%= label_tag :password, 'Пароль:' %>
+            <%= password_field_tag :password, params[:password] %>
+          <%= submit_tag "Войти", class: "btn btn-success" %>
+        </div>
+      </div>
+    </fieldset>
+<% end %>

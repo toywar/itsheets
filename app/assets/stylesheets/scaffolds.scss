@@ -1,0 +1,238 @@
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: rgba(252, 252, 252, 0.55);
+  font-size: 13px;
+  line-height: 18px;
+  font-family: 'Lato', Arial, sans-serif;
+  color: #555;
+  font-weight: 400;
+}
+
+p, ol, ul, td {
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+pre {
+  background-color: #eee;
+  padding: 10px;
+  font-size: 11px;
+}
+
+p.title-index {
+  text-align: center;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 14px;
+}
+
+a.top {
+    color: #b05756;
+    text-decoration: none;
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+  }
+
+a.top:hover {
+  color: #e75967;
+  text-decoration: none;
+}
+
+.link-title-post {
+  font-family: "Courier New";
+  font-size: 16px;
+  line-height: 18px;
+  color: #e75967;
+  text-decoration: none;
+  -o-transition: all .2s;
+  -moz-transition: all .2s;
+  -webkit-transition: all .2s;
+  -ms-transition: all .2s;
+}
+
+.link-title-post:hover {
+  color: #b05756;
+  text-decoration: none;
+}
+
+hr.dots {
+    border-top: dashed 1px;
+}
+
+hr.footer {
+  border: 1px dotted #246916;
+}
+
+.footer-pos {
+  display: inline-block;
+  float: right;
+}
+
+.datetime_select {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.footer-left {
+  color: #e75967;
+  text-decoration: none;
+  font-size: 16px;
+  float: left;
+}
+
+.rails-bootstrap-forms-datetime-select {
+  text-align: center;
+}
+
+fieldset {
+  text-align: center;
+}
+
+.form-control {
+  text-align: center;
+}
+
+.footer-center:hover {
+  color: #b05756;
+  text-decoration: none;
+}
+
+p.posts {
+  text-align: left;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+.img-circle {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  vertical-align: middle;
+}
+
+.post-title {
+  font-family: "Courier New", monospace;
+  color: #e75967;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.post-body {
+  font-family: "Courier New", monospace;
+  font-size: 16px;
+  text-align: left;
+  margin: 10px 200px 10px 200px;
+  text-align: justify;
+}
+
+.post-back {
+  text-align: center;
+  padding: 0.8em;
+}
+
+.button-back {
+  -webkit-border-radius: 17px;
+  -moz-border-radius: 17px;
+  border-radius: 17px;
+  font-family: Courier New;
+  color: #ffffff;
+  font-size: 14px;
+  background: #e75967;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.button-back:hover {
+  background: rgba(231, 89, 103, 0.76);
+  text-decoration: none;
+}
+
+.footer-icons {
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+}
+
+
+.apple_pagination {
+  font-family: 'Lato', Arial, sans-serif;
+  background: #f1f1f1;
+  border: 1px solid #e5e5e5;
+  text-align: center;
+  padding: 1em;
+  cursor: default; }
+.apple_pagination a, .apple_pagination span {
+  padding: 0.2em 0.3em; }
+.apple_pagination .disabled {
+  color: #aaaaaa; }
+.apple_pagination .current {
+  font-family: 'Lato', Arial, sans-serif;
+  font-style: normal;
+  background-color: #bebebe;
+  display: inline-block;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.5;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+  border-radius: 1em;
+  text-shadow: rgba(255, 255, 255, 0.8) 1px 1px 1px; }
+.apple_pagination a {
+  text-decoration: none;
+  color: black; }
+.apple_pagination a:hover, .apple_pagination a:focus {
+  text-decoration: none; }
+
+strong {
+  font-weight: 700;
+}
+
+  div {
+    &.field, &.actions {
+      margin-bottom: 10px;
+    }
+  }
+
+  #notice {
+    color: green;
+  }
+
+  .field_with_errors {
+    padding: 2px;
+    background-color: red;
+    display: table;
+  }
+
+  #error_explanation {
+    width: 450px;
+    border: 2px solid red;
+    padding: 7px;
+    padding-bottom: 0;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    h2 {
+      text-align: left;
+      font-weight: bold;
+      padding: 5px 5px 5px 15px;
+      font-size: 12px;
+      margin: -7px;
+      margin-bottom: 0px;
+      background-color: #c00;
+      color: #fff;
+    }
+    ul li {
+      font-size: 12px;
+      list-style: square;
+    }
+  }

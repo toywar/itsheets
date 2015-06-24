@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>IT::Sheets - @toywar</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lobster">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/css?family=Lato:400,700'>
+  <link href='http://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/r29/html5.min.js">
+    </script>
+  <![endif]-->
+
+  <script>
+    function facechange (objName) {
+        if ($(objName).css('display') == 'none'){
+            $(objName).animate({height: 'show'}, 400);
+        }
+        else {
+            $(objName).animate({height: 'hide'}, 200);
+        }
+    };
+  </script>
+  <%= csrf_meta_tags %>
+</head>
+
+<%= render 'posts/header' %>
+
+<body class='<%= controller.controller_name %>' >
+
+<%= yield %>
+
+</body>
+
+<%= render 'posts/footer' %>

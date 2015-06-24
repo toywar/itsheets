@@ -1,0 +1,29 @@
+<h1 align="center">Юзеры</h1>
+
+<% if notice %>
+    <p id="notice"><%= notice %></p>
+<% end %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Юзернейм</th>
+      <th>Показать</th>
+      <th>Редактировать</th>
+      <th>Грохнуть</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @users.each do |user| %>
+      <tr>
+        <td><%= user.name %></td>
+        <td><%= link_to 'Show', user %></td>
+        <td><%= link_to 'Edit', edit_user_path(user) %></td>
+        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<p align="center"> <%= link_to 'Новый юзер', new_user_path, class: "btn btn-success"%></p>

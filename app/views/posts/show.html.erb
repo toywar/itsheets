@@ -1,0 +1,11 @@
+<p class="post-title"><%= @post.title %></p>
+
+<p class="post-body"><%= @post.body %></p>
+
+<p class="post-back"><%= link_to "Назад", posts_path, :class => "button-back" %>
+
+<% if session[:user_id] %>
+    <%= link_to "Редактировать", edit_post_path, :class => "button-back" %>
+<% end %>
+
+</p>

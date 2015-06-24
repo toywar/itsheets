@@ -1,0 +1,8 @@
+<p id="notice"><%= notice %></p>
+<h4 align="center">Юзернейм: <span class="label label-success"><%= @user.name %></h4>
+<h4 align="center">Пароль: <span class="label label-success"><%= @user.password_digest %></h4>
+<br/>
+<p align="center">
+<%= link_to 'Редактировать', edit_user_path(@user), class: "button-back" %>
+<%= link_to 'Назад', users_path, class: "button-back" %>
+</p>

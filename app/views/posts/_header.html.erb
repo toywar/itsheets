@@ -1,0 +1,10 @@
+<% if session[:user_id] %>
+    <%= render :partial => 'posts/navigation' %>
+<% end %>
+<center>
+  <%= image_tag ("toywar.jpg"), :class => "img-circle" %><br/>
+  <h1>IT::Sheets by <a target="_blank" class="top" href="https://twitter.com/toywar/" >@toywar</a></h1>
+</center>
+
+<p class="title-index">Привет! Здесь я храню различные IT-заметки.</p>
+<hr class="dots" />
